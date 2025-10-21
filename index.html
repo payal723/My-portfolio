@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,14 +8,19 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
+    <!-- Preloader -->
     <div class="preloader">
-        <div class="loader-text">Payal Jat</div>
+        <div class="loader-text">PAYAL JAT</div>
+        <div class="loader-bar"></div>
     </div>
 
+    <!-- Custom Cursor -->
     <div class="cursor-ring"></div>
     <div class="cursor-dot"></div>
 
+    <!-- Navigation -->
     <nav class="nav">
         <div class="logo">PJ</div>
         <div class="nav-links">
@@ -27,102 +33,344 @@
     </nav>
 
     <main id="main-content">
+        <!-- Hero Section -->
         <section class="hero" id="home">
             <div class="hero-content">
                 <h1 class="hero-title">
-                    <div class="hero-line-container"><div class="hero-line">Payal Jat</div></div>
-                    <div class="hero-line-container"><div class="hero-line">&nbsp;— Full-Stack Developer</div></div>
+                    <div class="hero-line-container">
+                        <div class="hero-line"><span>Crafting Digital</span></div>
+                    </div>
+                    <div class="hero-line-container">
+                        <div class="hero-line"><span>Experiences</span></div>
+                    </div>
                 </h1>
                 <p class="hero-description">
-                    Crafting elegant, high-performance web experiences from concept to deployment.
+                    Full-stack developer passionate about building elegant, high-performance web applications. Turning ideas into reality.
                 </p>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                    <a href="#projects" class="btn btn-secondary">View My Work</a>
+                </div>
             </div>
         </section>
 
+        <!-- About Section -->
         <section class="about-section" id="about">
             <div class="container">
-                <h2 class="section-title">About Me</h2>
+                <h2 class="section-title">About <span>Me</span></h2>
                 <div class="about-content">
                     <div class="about-image">
-                        <img src="https://www.bing.com/th/id/OIP.hNNRLU33mxeOTvLmyKo_KQHaHa?w=204&h=211&c=8&rs=1&qlt=90&o=6&cb=thwsc5&dpr=1.3&pid=3.1&rm=2" alt="Payal Jat Profile Picture">
+                        <div class="image-wrapper">
+                            <img src="data:image/webp;base64,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" alt="Payal Jat Profile">
+                            <div class="image-border"></div>
+                        </div>
                     </div>
                     <div class="about-text">
-                        <h3>Hi, I'm Payal 👋</h3>
-                        <p>I am a detail-oriented Full-Stack Developer with a passion for building intuitive and dynamic user interfaces. I thrive on solving complex problems and turning ideas into beautiful, functional realities. My goal is to always write clean, scalable, and efficient code.</p>
-                        <a href="#contact" class="cta-button">Let's Connect</a>
+                        <h3>Hi, I'm Payal Jat 👋</h3>
+                        <p>I'm a passionate Full-Stack Developer with a keen eye for detail and a love for solving complex problems. With expertise in modern web technologies, I create intuitive, scalable, and high-performance applications that users love.</p>
+                        
+                        <div class="about-highlights">
+                            <div class="highlight-item">
+                                <i class="fas fa-code"></i>
+                                <div>
+                                    <h4>Clean Code</h4>
+                                    <p>Writing maintainable, efficient code is my priority</p>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-rocket"></i>
+                                <div>
+                                    <h4>Performance</h4>
+                                    <p>Optimized for speed and scalability</p>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-palette"></i>
+                                <div>
+                                    <h4>Design Focus</h4>
+                                    <p>Beautiful UI/UX that matters to users</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p class="about-extra">I specialize in the MERN stack and love crafting responsive, modern web experiences. When I'm not coding, you can find me exploring new technologies or contributing to open-source projects.</p>
+                        
+                        <a href="#contact" class="btn btn-primary">Let's Connect</a>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- Skills Section -->
         <section class="skills-section" id="skills">
             <div class="container">
-                <h2 class="section-title">My Tech Arsenal</h2>
-                <div class="skills-grid">
-                    <div class="skill-card"><i class="fab fa-html5"></i><span>HTML</span></div>
-                    <div class="skill-card"><i class="fab fa-css3-alt"></i><span>CSS</span></div>
-                    <div class="skill-card"><i class="fab fa-js"></i><span>JavaScript</span></div>
-                    <div class="skill-card"><i class="fab fa-react"></i><span>React</span></div>
-                    <div class="skill-card"><i class="fas fa-code"></i><span>GSAP</span></div>
-                    <div class="skill-card"><i class="fab fa-bootstrap"></i><span>Bootstrap</span></div>
-                    <div class="skill-card"><i class="fas fa-database"></i><span>MERN Stack</span></div>
-                    <div class="skill-card"><i class="fas fa-database"></i><span>MySQL</span></div>
-                    <div class="skill-card"><i class="fas fa-server"></i><span>REST APIs</span></div>
+                <h2 class="section-title">Tech <span>Arsenal</span></h2>
+                
+                <div class="skills-categories">
+                    <!-- Frontend -->
+                    <div class="skill-category">
+                        <h3 class="category-title">Frontend</h3>
+                        <div class="skills-grid">
+                            <div class="skill-card">
+                                <div class="skill-icon">
+                                    <i class="fab fa-html5"></i>
+                                </div>
+                                <span>HTML5</span>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-icon">
+                                    <i class="fab fa-css3-alt"></i>
+                                </div>
+                                <span>CSS3</span>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-icon">
+                                    <i class="fab fa-js"></i>
+                                </div>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-icon">
+                                    <i class="fab fa-react"></i>
+                                </div>
+                                <span>React</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Styling -->
+                    <div class="skill-category">
+                        <h3 class="category-title">Styling & Frameworks</h3>
+                        <div class="skills-grid">
+                            <div class="skill-card">
+                                <div class="skill-icon">
+                                    <i class="fas fa-palette"></i>
+                                </div>
+                                <span>Tailwind CSS</span>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-icon">
+                                    <i class="fab fa-bootstrap"></i>
+                                </div>
+                                <span>Bootstrap</span>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-icon">
+                                    <i class="fas fa-swatchbook"></i>
+                                </div>
+                                <span>Material UI</span>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-icon">
+                                    <i class="fas fa-code"></i>
+                                </div>
+                                <span>GSAP</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Backend -->
+                    <div class="skill-category">
+                        <h3 class="category-title">Backend & Database</h3>
+                        <div class="skills-grid">
+                            <div class="skill-card">
+                                <div class="skill-icon">
+                                    <i class="fab fa-node-js"></i>
+                                </div>
+                                <span>Node.js</span>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-icon">
+                                    <i class="fas fa-server"></i>
+                                </div>
+                                <span>Express</span>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-icon">
+                                    <i class="fas fa-database"></i>
+                                </div>
+                                <span>MongoDB</span>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-icon">
+                                    <i class="fas fa-database"></i>
+                                </div>
+                                <span>MySQL</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tools & Others -->
+                    <div class="skill-category">
+                        <h3 class="category-title">Tools & Technologies</h3>
+                        <div class="skills-grid">
+                            <div class="skill-card">
+                                <div class="skill-icon">
+                                    <i class="fab fa-git-alt"></i>
+                                </div>
+                                <span>Git</span>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-icon">
+                                    <i class="fab fa-github"></i>
+                                </div>
+                                <span>GitHub</span>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-icon">
+                                    <i class="fas fa-code-branch"></i>
+                                </div>
+                                <span>Redux</span>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-icon">
+                                    <i class="fas fa-plug"></i>
+                                </div>
+                                <span>REST APIs</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
+        <!-- Projects Section -->
         <section class="projects-section" id="projects">
-            <div class="projects-container">
-                <div class="projects-intro-text">
-                    <h2 class="section-title">Selected Works</h2>
-                </div>
-                <div class="projects-track">
+            <div class="container">
+                <h2 class="section-title">Featured <span>Projects</span></h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <a href="https://ai-mock-interviews-8xfgnxxhv-payaljaat55-4980s-projects.vercel.app/" target="_blank">
+                            <div class="project-image">
+                                <div class="project-placeholder" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); display: flex; align-items: center; justify-content: center; height: 100%; font-size: 3rem; color: white;">
+                                    <i class="fas fa-brain"></i>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h3>AI Powered Mock Interview</h3>
+                                <p>PrepWise helps users ace job interviews with AI-powered mock sessions and real-time feedback.</p>
+                                <div class="project-tags">
+                                    <span class="tag">React</span>
+                                    <span class="tag">AI</span>
+                                    <span class="tag">Web</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="project-card">
+                        <a href="https://wanderlust-1-1yzr.onrender.com/" target="_blank">
+                            <div class="project-image">
+                                <div class="project-placeholder" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); display: flex; align-items: center; justify-content: center; height: 100%; font-size: 3rem; color: white;">
+                                    <i class="fas fa-map-location-dot"></i>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h3>WanderLust</h3>
+                                <p>Full-stack accommodation booking platform with MongoDB, Express, and real-time availability.</p>
+                                <div class="project-tags">
+                                    <span class="tag">MERN</span>
+                                    <span class="tag">MongoDB</span>
+                                    <span class="tag">EJS</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
                     <div class="project-card">
                         <a href="https://social-good-project.onrender.com" target="_blank">
-                            <div class="project-image"><img src="https://th.bing.com/th/id/OIP.Cs7BZlaIledgpZkvAx1wegHaHa?w=166&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="Social Good Project"></div>
-                            <div class="project-info"><h3>Social Good Project</h3><p>Connecting volunteers with organizations</p></div>
+                            <div class="project-image">
+                                <div class="project-placeholder" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); display: flex; align-items: center; justify-content: center; height: 100%; font-size: 3rem; color: white;">
+                                    <i class="fas fa-handshake"></i>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h3>Social Good</h3>
+                                <p>Connect volunteers with organizations. Impact-driven platform for community service.</p>
+                                <div class="project-tags">
+                                    <span class="tag">React</span>
+                                    <span class="tag">Community</span>
+                                    <span class="tag">API</span>
+                                </div>
+                            </div>
                         </a>
                     </div>
+
                     <div class="project-card">
                         <a href="https://payal723.github.io/Sundown-Studio-Clone/" target="_blank">
-                            <div class="project-image"><img src="https://th.bing.com/th?q=Sundown+Studio+Logo&w=120&h=120&c=1&rs=1&qlt=70&r=0&o=7&cb=1&dpr=1.3&pid=InlineBlock&rm=3&mkt=en-IN&cc=IN&setlang=en&adlt=moderate&t=1&mw=247" alt="Sundown Studio Clone"></div>
-                            <div class="project-info"><h3>Sundown Studio Clone</h3><p>Pixel-perfect clone with fluid animations</p></div>
+                            <div class="project-image">
+                                <div class="project-placeholder" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); display: flex; align-items: center; justify-content: center; height: 100%; font-size: 3rem; color: white;">
+                                    <i class="fas fa-film"></i>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h3>Sundown Studio Clone</h3>
+                                <p>Pixel-perfect recreation with fluid GSAP animations and modern design patterns.</p>
+                                <div class="project-tags">
+                                    <span class="tag">HTML</span>
+                                    <span class="tag">CSS</span>
+                                    <span class="tag">GSAP</span>
+                                </div>
+                            </div>
                         </a>
                     </div>
+
                     <div class="project-card">
                         <a href="https://payal723.github.io/simon-game/" target="_blank">
-                            <div class="project-image"><img src="http://ecx.images-amazon.com/images/I/61L8YgYWYRL._SL1500_.jpg" alt="Simon Game"></div>
-                            <div class="project-info"><h3>Simon Game</h3><p>Classic memory game built with JavaScript</p></div>
+                            <div class="project-image">
+                                <div class="project-placeholder" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); display: flex; align-items: center; justify-content: center; height: 100%; font-size: 3rem; color: white;">
+                                    <i class="fas fa-gamepad"></i>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h3>Simon Memory Game</h3>
+                                <p>Classic pattern-matching game built with vanilla JavaScript. Fun and interactive.</p>
+                                <div class="project-tags">
+                                    <span class="tag">JavaScript</span>
+                                    <span class="tag">Game</span>
+                                    <span class="tag">Interactive</span>
+                                </div>
+                            </div>
                         </a>
                     </div>
-                    <div class="project-card-end">
-                        <h3>See more on GitHub</h3>
-                        <a href="https://github.com/payal723" target="_blank" class="cta-button">Visit GitHub</a>
-                    </div>
+                </div>
+
+                <div class="see-more">
+                    <h3>See more on GitHub</h3>
+                    <a href="https://github.com/payal723" target="_blank" class="btn btn-primary">Visit GitHub</a>
                 </div>
             </div>
         </section>
 
+        <!-- Contact Section -->
         <section class="contact-section" id="contact">
             <div class="container">
-                <h2 class="section-title">Let's Build Something Great</h2>
-                <p>Have a project in mind or just want to say hello? My inbox is always open.</p>
-                <a href="mailto:payaljaat55@gmail.com" class="contact-email-link">payaljaat55@gmail.com</a>
+                <h2 class="section-title">Let's Build <span>Something Great</span></h2>
+                <p>Have an exciting project or just want to chat about tech? My inbox is always open for opportunities and collaborations.</p>
+                <a href="mailto:payaljaat55@gmail.com" class="contact-email">payaljaat55@gmail.com</a>
                 <div class="contact-socials">
-                    <a href="https://github.com/payal723" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-                    <a href="https://www.linkedin.com/in/payal-jat/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                    <a href="https://github.com/payal723" target="_blank" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/payal-jat/" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://twitter.com" target="_blank" class="social-link">
+                        <i class="fab fa-twitter"></i>
+                    </a>
                 </div>
             </div>
         </section>
     </main>
 
+    <!-- Footer -->
     <footer class="footer">
-        <p>&copy; 2025 Payal Jat. Crafted with passion.</p>
+        <p>&copy; 2025 Payal Jat. Crafted with passion and innovation.</p>
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <script src="app.js"></script>
 </body>
+
 </html>
